@@ -2,11 +2,11 @@
 
 ## Project
 
-Name: Material-UI
+Name: Material UI
 
 URL: https://github.com/mui/material-ui/
 
-Material UI is a library of React components that features implementation of Google's Material Design system.
+Material UI is a comprehensive library of React components that features our independent implementation of Google's Material Design system. (from their GitHub README)
 
 ## Onboarding experience
 
