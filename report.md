@@ -1,20 +1,16 @@
 # Report for assignment 4
 
-This is a template for your report. You are free to modify it as needed.
-It is not required to use markdown for your report either, but the report
-has to be delivered in a standard, cross-platform format.
-
 ## Project
 
-Name:
+Name: Material-UI
 
-URL:
+URL: https://github.com/mui/material-ui/
 
-One or two sentences describing it
+Material UI is a library of React components that features implementation of Google's Material Design system.
 
 ## Onboarding experience
 
-Did you choose a new project or continue on the previous one?
+Did you choose a new project or continue on the previous one? We chose a new project
 
 If you changed the project, how did your experience differ from before?
 
