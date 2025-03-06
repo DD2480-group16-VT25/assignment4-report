@@ -21,18 +21,27 @@ For each team member, how much time was spent in
     Everyone: 6 hours
 
 2. discussions within parts of the group;
+    Linus: 15 minutes
 
 3. reading documentation;
+    Linus: 1 hour
 
 4. configuration and setup;
+    Linus:
+      - pnpm installation: 30 minutes
+      - testing setup: 15 minutes
 
 5. analyzing code/output;
+    Linus: 5 hours
 
 6. writing documentation;
+    Linus: 1 hour
 
 7. writing code;
+    Linus: 5 hours
 
 8. running code?
+    Linus: 1 hour
 
 For setting up tools and libraries (step 4), enumerate all dependencies
 you took care of and where you spent your time, if that time exceeds
@@ -44,7 +53,7 @@ Title: [Switch] disabled prop doesn't set aria-disabled on input element
 
 URL: https://github.com/mui/material-ui/issues/45436
 
-Summary: The unwated behavior was that the aria-disabled is set on the span surrounding the input rather than the input directly. This caused problems for users relying on screen readers when navigating web pages and this creates accessibility issus with a rule of the Web Content Accessibility Guidlines (WCAG).
+Summary: The unwanted behavior was that the aria-disabled is set on the span surrounding the input rather than the input directly. This caused problems for users relying on screen readers when navigating web pages and this creates accessibility issus with a rule of the Web Content Accessibility Guidlines (WCAG).
 
 Scope: The code that is affected is related to the fundamental input html element and this will affect a lot of components using this element causing them to achive the wanted behavior and thus compliant with WCGAG.
 
