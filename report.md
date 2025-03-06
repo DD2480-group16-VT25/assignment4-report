@@ -10,15 +10,15 @@ Material UI is a comprehensive library of React components that features our ind
 
 ## Onboarding experience
 
-Did you choose a new project or continue on the previous one? We chose a new project
-
-If you changed the project, how did your experience differ from before?
+For this this project we decided to pick a new project to work with. The project we choose for the last assignment felt a bit to complex and there weren't any issues 
+that we perceived we would have time to address in the time that was available. The new program was easier to grasp, partly thanks to its visual nature but also a more comprehensible code base. 
 
 ## Effort spent
 
 For each team member, how much time was spent in
 
 1. plenary discussions/meetings;
+    Everyone: 6 hours
 
 2. discussions within parts of the group;
 
@@ -40,13 +40,13 @@ you took care of and where you spent your time, if that time exceeds
 
 ## Overview of issue(s) and work done.
 
-Title:
+Title: [Switch] disabled prop doesn't set aria-disabled on input element
 
-URL:
+URL: https://github.com/mui/material-ui/issues/45436
 
-Summary in one or two sentences
+Summary: The unwated behavior was that the aria-disabled is set on the span surrounding the input rather than the input directly. This caused problems for users relying on screen readers when navigating web pages and this creates accessibility issus with a rule of the Web Content Accessibility Guidlines (WCAG).
 
-Scope (functionality and code affected).
+Scope: The code that is affected is related to the fundamental input html element and this will affect a lot of components using this element causing them to achive the wanted behavior and thus compliant with WCGAG.
 
 ## Requirements for the new feature or requirements affected by functionality being refactored
 
