@@ -18,30 +18,30 @@ that we perceived we would have time to address in the time that was available. 
 For each team member, how much time was spent in
 
 1. plenary discussions/meetings;
-    Everyone: 6 hours
+    - Everyone: 6 hours
 
 2. discussions within parts of the group;
-    Linus: 15 minutes
+    - Linus: 15 minutes
 
 3. reading documentation;
-    Linus: 1 hour
+    - Linus: 1 hour
 
 4. configuration and setup;
-    Linus:
+    - Linus:
       - pnpm installation: 30 minutes
       - testing setup: 15 minutes
 
 5. analyzing code/output;
-    Linus: 5 hours
+    - Linus: 5 hours
 
 6. writing documentation;
-    Linus: 1 hour
+    - Linus: 1 hour
 
 7. writing code;
-    Linus: 5 hours
+    - Linus: 5 hours
 
 8. running code?
-    Linus: 1 hour
+    - Linus: 1 hour
 
 For setting up tools and libraries (step 4), enumerate all dependencies
 you took care of and where you spent your time, if that time exceeds
@@ -137,6 +137,7 @@ After the patch:
 
 ## UML class diagram and its description
 
+![UML class diagram](MUI-light.png)
 
 ## Overall experience
 
