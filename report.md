@@ -140,6 +140,8 @@ After the patch:
 
 ## Overall experience
 
-What are your main take-aways from this project? What did you learn? It can be tricky to contribute to large open source projects. Partly because it's likely a large code base that one has to get familiar with in order to work on issues. With theese large projects there are certain procedures that one has to comply with when contributing and these often differ from project to project which also increse the startup phase.
+**What are your main take-aways from this project? What did you learn?**
+It can be tricky to contribute to large open source projects. Partly because it's likely a large code base that one has to get familiar with in order to work on issues. With these large projects there are certain procedures that one has to comply with when contributing and these often differ from project to project which also increase the startup phase.
 
-How did you grow as a team, using the Essence standard to evaluate yourself? During this course the group has gone from being at the "Seeded" state, where a portion of the time and enrgy had to be channeled towards forming the group and establishing how the collaboration should be performed. But with each assignment the group grew and less effort had to be put these challanges and could be redirected toward working on the tasks at hand. Close to the end of the course, during the final assignment, the group are now at the "Performing" state.
+**How did you grow as a team, using the Essence standard to evaluate yourself?**
+During this course the group has gone from being at the "Seeded" state, where a portion of the time and energy had to be channeled towards forming the group and establishing how the collaboration should be performed. But with each assignment the group grew and less effort had to be put these challanges and could be redirected toward working on the tasks at hand. Close to the end of the course, during the final assignment, the group are now at the "Performing" state.
