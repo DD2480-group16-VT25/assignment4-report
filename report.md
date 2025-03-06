@@ -56,9 +56,24 @@ Optional (point 3): trace tests to requirements.
 
 ### Patch
 
-(copy your changes or the add git command to show them)
-
-git diff ...
+```diff
+diff --git a/packages/mui-material/src/utils/useSlot.ts b/packages/mui-material/src/utils/useSlot.ts
+index 90f9ffc4bd..6c8dfd97dc 100644
+--- a/packages/mui-material/src/utils/useSlot.ts
++++ b/packages/mui-material/src/utils/useSlot.ts
+@@ -135,6 +135,11 @@ export default function useSlot<
+     {
+       ...(name === 'root' && !rootComponent && !slots[name] && internalForwardedProps),
+       ...(name !== 'root' && !slots[name] && internalForwardedProps),
++      ...((name === 'input' || elementType === 'input' || name.includes('input')) &&
++        'disabled' in ownerState &&
++        ownerState.disabled !== undefined && {
++          'aria-disabled': !!ownerState.disabled || undefined,
++        }),
+       ...mergedProps,
+       ...(LeafComponent &&
+         !shouldForwardComponentProp && {
+```
 
 Optional (point 4): the patch is clean.
 
@@ -66,8 +81,57 @@ Optional (point 5): considered for acceptance (passes all automated checks).
 
 ## Test results
 
-Overall results with link to a copy or excerpt of the logs (before/after
-refactoring).
+>The test being ran are `/packages/mui-material/src/Switch/Switch.test.js`
+
+Before touching the forked-repo:
+```bash
+158 passing (841ms)
+```
+
+Git diff for two new test cases:
+```diff
+diff --git a/packages/mui-material/src/Switch/Switch.test.js b/packages/mui-material/src/Switch/Switch.test.js
+index 3f62c576b8..e986850094 100644
+--- a/packages/mui-material/src/Switch/Switch.test.js
++++ b/packages/mui-material/src/Switch/Switch.test.js
+@@ -159,4 +159,18 @@ describe('<Switch />', () => {
+       expect(container.firstChild).to.have.class('test-class-name');
+     });
+   });
++
++  describe('accessibility', () => {
++    it('has attribute aria-disabled="true" when disabled', () => {
++      const { getByRole } = render(<Switch disabled />);
++
++      expect(getByRole('checkbox')).to.have.attribute('aria-disabled', 'true');
++    });
++
++    it('does not have aria-disabled when not disabled', () => {
++      const { getByRole } = render(<Switch />);
++
++      expect(getByRole('checkbox')).to.not.have.attribute('aria-disabled');
++    });
++  });
+ });
+```
+
+The former test case fails before the patch:
+```bash
+159 passing (790ms)
+12 pending
+1 failing
+1) <Switch />
+      accessibility
+        has attribute aria-disabled="true" when disabled:
+    AssertionError: expected input.PrivateSwitchBase-input.MuiSwitch-input.emotion-client-render-j8yymo[disabled][type="checkbox"] to have an attribute 'aria-disabled'
+    at Context.<anonymous> (packages\mui-material\src\Switch\/Switch.test.js:167:45)
+    at processImmediate (node:internal/timers:491:21)
+```
+
+After the patch:
+```bash
+160 passing (556ms)
+```
 
 ## UML class diagram and its description
 
