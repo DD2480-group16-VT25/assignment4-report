@@ -48,10 +48,6 @@ Summary: The unwated behavior was that the aria-disabled is set on the span surr
 
 Scope: The code that is affected is related to the fundamental input html element and this will affect a lot of components using this element causing them to achive the wanted behavior and thus compliant with WCGAG.
 
-## Requirements for the new feature or requirements affected by functionality being refactored
-
-Optional (point 3): trace tests to requirements.
-
 ## Code changes
 
 ### Patch
@@ -75,9 +71,6 @@ index 90f9ffc4bd..6c8dfd97dc 100644
          !shouldForwardComponentProp && {
 ```
 
-Optional (point 4): the patch is clean.
-
-Optional (point 5): considered for acceptance (passes all automated checks).
 
 ## Test results
 
@@ -135,18 +128,9 @@ After the patch:
 
 ## UML class diagram and its description
 
-### Key changes/classes affected
-
-Optional (point 1): Architectural overview.
-
-Optional (point 2): relation to design pattern(s).
 
 ## Overall experience
 
-What are your main take-aways from this project? What did you learn?
+What are your main take-aways from this project? What did you learn? It can be tricky to contribute to large open source projects. Partly because it's likely a large code base that one has to get familiar with in order to work on issues. With theese large projects there are certain procedures that one has to comply with when contributing and these often differ from project to project which also increse the startup phase.
 
-How did you grow as a team, using the Essence standard to evaluate yourself?
-
-Optional (point 6): How would you put your work in context with best software engineering practice?
-
-Optional (point 7): Is there something special you want to mention here?
+How did you grow as a team, using the Essence standard to evaluate yourself? During this course the group has gone from being at the "Seeded" state, where a portion of the time and enrgy had to be channeled towards forming the group and establishing how the collaboration should be performed. But with each assignment the group grew and less effort had to be put these challanges and could be redirected toward working on the tasks at hand. Close to the end of the course, during the final assignment, the group are now at the "Performing" state.
