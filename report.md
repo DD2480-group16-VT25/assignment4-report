@@ -73,6 +73,14 @@ Summary: The unwanted behavior was that the aria-disabled is set on the span sur
 
 Scope: The code that is affected is related to the fundamental input html element and this will affect a lot of components using this element causing them to achive the wanted behavior and thus compliant with WCGAG.
 
+### Issue Requirements
+
+#### `<Switch />` component compliant with [WCAG 2.1](https://www.w3.org/TR/WCAG21/)
+
+`aria-disabled="true"` should be set on the `<input />`-element *directly* when the `disabled` prop of the `<Switch />` is set to `true`. Current behavior is that the `aria-disabled` attribute is set on the span element surrounding the input element, see image below.
+
+![Image of current behavior](issue.png)
+
 ## Code changes
 
 ### Patch
