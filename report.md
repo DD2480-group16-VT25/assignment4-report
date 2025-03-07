@@ -23,10 +23,12 @@ For each team member, how much time was spent in
 2. discussions within parts of the group;
     - Linus: 15 minutes
     - Ellen: 15 minutes
+    - Robin: 15 minutes
 
 3. reading documentation;
     - Linus: 1 hour
     - Ellen: 3 hours
+    - Robin: 5 hours
 
 4. configuration and setup;
     - Linus:
@@ -35,22 +37,27 @@ For each team member, how much time was spent in
     - Ellen: 
       - pnpm installation: 1 hours
       - testing setup: 15 minutes
+    - Robin: 0 hours
 
 5. analyzing code/output;
     - Linus: 5 hours
     - Ellen: 5 hours
+    - Robin: 5 hours
 
 6. writing documentation;
     - Linus: 1 hour
     - Ellen: 4 hours
+    - Robin: 4 hours
 
 7. writing code;
     - Linus: 5 hours
     - Ellen: 0 hours
+    - Robin: 0 hours
 
 8. running code?
     - Linus: 1 hour
     - Ellen: 0 hours
+    - Robin: 0 hours
 
 For setting up tools and libraries (step 4), enumerate all dependencies
 you took care of and where you spent your time, if that time exceeds
